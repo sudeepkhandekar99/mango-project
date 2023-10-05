@@ -1,0 +1,320 @@
+.flex-display { /* Flex display for layout */
+  display: flex;
+  /* width: 100%; */
+  /* margin-left: 50px; */
+}
+
+.page{ /* Flex display for layout */
+  /* margin: 50px; */
+}
+
+.space { /* Creating space between elements */
+display: flex;
+justify-content: space-between;
+}
+
+
+.hotel-title{ /* Styling for hotel title */
+  
+  font-weight: bold;
+
+}
+
+#starhotel-txt{  /* Styling for a specific element with ID "starhotel-txt" */
+  font-size: 14px;
+}
+
+
+.flex-display,.nav-container a{ /* Aligning elements in flex containers */
+  align-items: center;
+}
+
+body{ /* Resetting default body margins and padding */
+  margin: 0;
+  padding: auto;
+}
+
+.flex-display .rating{ /* Styling for elements with class "rating" inside .flex-display */
+  border-color: green;
+  border-style: solid;
+  border: 1px;
+}
+
+.float-left{ /* Float left and display as flex */
+  display: flex;
+  float: left;
+}
+
+.float-right{ /* Float left and display as flex */
+  display: flex;
+  float: right;
+}
+
+#rightside{ /* Float left and display as flex */
+  color: crimson;
+  display: block;
+  float: right;
+  font-size: 23px;
+}
+
+.nav-buton:hover { /* Hover effect for elements with class "nav-buton" */
+  background-color: green;
+  font-style: normal;
+  padding: auto;
+  cursor: pointer;
+} 
+
+/* for keeping everything inline */
+#inline {  
+  display: inline-flex;
+}
+
+
+
+.num2{
+  font-size: 4;
+  color: crimson;
+
+}
+
+.box-detail{
+  border-style: solid;
+  border: 1px;
+}
+
+#german-title{
+  font-size: 10px;
+}
+
+.nav-container{ /* Styling for an element with ID "rightside" */
+  box-shadow: 0px 0px 20px 0px #e3e3e3;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: none;
+  text-align: center;
+  vertical-align: auto;
+}
+
+.marging-spacing{
+  margin-top: 20px;
+  margin-bottom: 40px ;
+}
+
+.text-highlight{
+  color: crimson;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.nav-buton{
+  border: none;
+  margin: 0 20px 0 20px;
+  background:none;
+}
+nav {
+    border-bottom: 1px solid black;
+  }
+  
+  .nav-1 ol {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .nav-1 {
+    display: inline-block;
+  }
+  
+  .nav-1 a::after {
+    display: inline-block;
+    color: #000;
+    content: '>';
+    font-size: 80%;
+    font-weight: bold;
+    padding: 0 3px;
+  }
+
+  /* #book-now{
+    background-color: green;
+    border-radius: 20px;
+    color: black;
+    padding: 20 px; */
+   
+.blank{
+margin-bottom: 10px;
+}
+
+.hotel-review{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px 20px;
+}
+
+.hotel-review-icon{
+  border: 2px solid green;
+  padding: 5px;
+}
+
+/* border lines */
+.border-line{ 
+  border-top: 1px solid grey;
+  margin: 10px 0;
+}
+
+
+#book-now p{
+  font-size: 30px;
+}
+
+.review_page{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+/* +24 buttton customization */
+.butto_24{ 
+  border: none;
+  color: red;
+  margin: 0 20px 0 20px;
+  background:none;
+  background-color: white;
+  align-items: normal;
+  width: 80px;
+  border:0px ;
+ }
+
+ .available-room-item{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+
+
+ .available-room-item-detail{
+  display: flex;
+  align-items: center;
+}
+
+.available-room-item-type{
+  margin-left: 20px;
+}
+
+.available-room-item-cost{
+  margin-right: 40px;
+  font-weight: 700;
+}
+
+.aminities-column{
+  display: flex;
+  flex-direction: column;
+  margin-right: 200px;
+}
+
+ .amenties {
+  margin-bottom: 10px;
+  list-style: none;
+ }
+
+
+ .location-map{
+  display: flex;
+  justify-content: space-between;
+
+ }
+
+ .review_det{
+  display: flex;
+  justify-content: space-between;
+ }
+
+ .green-button{
+  background-color: #1add8c;
+  border: none;
+  padding: 10px 5px;
+ }
+
+ .location-map a,button{
+  background-color: #1add8c;
+  border-radius: 6px;
+  border-style: none;
+  margin-left: 10px;
+  
+ }
+ .loation-istanb{
+  display: flex;
+  flex-direction: row;
+  align-items: normal;
+  font-size: 14em;
+ }
+
+.display-ratings{
+  display: flex;
+  flex-direction: row;
+  
+}
+/* added cards */
+.card-1 {
+  width: 150px; /* Adjust the width as needed */
+  height: 100px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin: 0px;
+  text-align: center;
+  background-color: #1add8c;
+  border-radius: 10px;
+}
+
+
+ .card {
+  width: 150px; /* Adjust the width as needed */
+  height: 100px;
+  border: 1px solid green;
+  padding: 5px;
+  margin: 0px 10px 10px 10px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card p {
+  margin: 10px 0;
+}
+
+/* footer sect */
+.subscribe{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #a6dfc8;
+  margin: 30px 0 30px 0;
+  border-radius: 10px;
+}
+
+/* footer */
+.footer{ 
+  padding: 30px;
+  margin: 40px 0 40px 0;
+  justify-content: space-between;
+  background-color: #89edc4;
+  display: flex;
+  flex-direction: row;
+}
+
+.subscribe-left{
+margin-left: 20px;
+}
+
+.subscribe-right{
+margin-right: 20px;
+}
