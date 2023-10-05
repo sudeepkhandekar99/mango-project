@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 html {
-  /* font-size: 62.5%; */
   font-family: 'Poppins', sans-serif;
 }
 
@@ -16,6 +15,7 @@ html {
   /* margin: 50px; */
   width: 80%;
   margin: auto;
+  margin-top: 40px;
 }
 
 .space { /* Creating space between elements */
@@ -26,10 +26,23 @@ justify-content: space-between;
 
 .hotel-title{ /* Styling for hotel title */
   font-weight: bold;
+  font-size: 24px;
+}
+
+.rating_stars {
+  margin-left: 30px;
+  color: orange;
+  /* max-height: 10px; */
+  font-size: 12px;
 }
 
 #starhotel-txt{  /* Styling for a specific element with ID "starhotel-txt" */
-  font-size: 14px;
+  margin-left: 10px;
+  vertical-align: middle;
+  font-size: 12px;
+  text-transform: capitalize;
+  font-style: normal;
+  font-weight: lighter;
 }
 
 
@@ -43,7 +56,7 @@ body{ /* Resetting default body margins and padding */
 }
 
 .flex-display .rating{ /* Styling for elements with class "rating" inside .flex-display */
-  border-color: green;
+  border-color: #96cca8;
   border-style: solid;
   border: 1px;
 }
@@ -59,14 +72,15 @@ body{ /* Resetting default body margins and padding */
 }
 
 #rightside{ /* Float left and display as flex */
-  color: crimson;
+  color: orange;
   display: block;
   float: right;
   font-size: 23px;
+  font-weight: bold;
 }
 
 .nav-buton:hover { /* Hover effect for elements with class "nav-buton" */
-  background-color: green;
+  background-color: #96cca8;
   font-style: normal;
   padding: auto;
   cursor: pointer;
@@ -81,8 +95,15 @@ body{ /* Resetting default body margins and padding */
 
 .num2{
   font-size: 4;
-  color: crimson;
+  color: orange;
 
+}
+
+.location-tag{
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  background-color: beige;
 }
 
 .box-detail{
@@ -91,7 +112,8 @@ body{ /* Resetting default body margins and padding */
 }
 
 #german-title{
-  font-size: 10px;
+  font-size: 12px;
+  margin-left: 5px;
 }
 
 .globe_logo {
@@ -118,7 +140,7 @@ body{ /* Resetting default body margins and padding */
 }
 
 .text-highlight{
-  color: crimson;
+  color: orange;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -151,7 +173,7 @@ nav {
   }
 
   /* #book-now{
-    background-color: green;
+    background-color: #96cca8;
     border-radius: 20px;
     color: black;
     padding: 20 px; */
@@ -165,11 +187,17 @@ margin-bottom: 10px;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 15px 20px;
+  margin-top: 15px;
 }
 
 .hotel-review-icon{
-  border: 2px solid green;
+  border: 2px solid #96cca8;
   padding: 5px;
+  font-weight: bold;
+  height: 20px;
+  margin: 3px;
+  align-items: center;
+  justify-content: center;
 }
 
 /* border lines */
@@ -243,19 +271,18 @@ margin-bottom: 10px;
 
  }
 
+ .book-now-button{
+  padding: 12.5px;
+ }
+
  .review_det{
   display: flex;
   justify-content: space-between;
  }
 
- .green-button{
-  background-color: #1add8c;
-  border: none;
-  padding: 10px 5px;
- }
 
  .location-map a,button{
-  background-color: #1add8c;
+  background-color: #96cca8;
   border-radius: 6px;
   border-style: none;
   margin-left: 10px;
@@ -281,7 +308,7 @@ margin-bottom: 10px;
   padding: 5px;
   margin: 0px;
   text-align: center;
-  background-color: #1add8c;
+  background-color: #96cca8;
   border-radius: 10px;
 }
 
@@ -289,7 +316,7 @@ margin-bottom: 10px;
  .card {
   width: 150px; /* Adjust the width as needed */
   height: 100px;
-  border: 1px solid green;
+  border: 1px solid #96cca8;
   padding: 5px;
   margin: 0px 10px 10px 10px;
   text-align: center;
@@ -333,4 +360,102 @@ margin-left: 20px;
 
 .subscribe-right{
 margin-right: 20px;
+}
+
+.quick-actions{
+  /* width: 100vh; */
+  /* color: wheat; */
+}
+
+
+
+.bookings-area{
+  display: block;
+  float: right;
+}
+
+.quick-details {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+
+.right-details {
+  display: block;
+  float: right;
+  background-color: aqua;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+.left-details {
+  flex-direction: column;
+}
+
+.raiting-details {
+  margin-top: 5px;
+}
+
+.raiting-card {
+  border: 2px solid #96cca8;
+  font-weight: bolder;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.extra-details {
+  margin-bottom: 10px;
+  /* margin-top: 15px; */
+}
+
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.image-column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.image-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 50px;
+  overflow: hidden; 
+}
+
+.large-image {
+  width: 50%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.small-images {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.small-image {
+  width: 50%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 10px;
 }
